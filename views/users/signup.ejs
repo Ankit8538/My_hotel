@@ -1,0 +1,58 @@
+<% layout('/layouts/boilerplate.ejs') %>
+
+<div class="row mt-3">
+    <h1 class="col-6 offset-3">signUp for new User </h1>
+    <div class="col-6 offset-3">
+        <form action="/signup" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Enter your name</label>
+                <input name="name" id="name" type="text" placeholder="Enter your name" class="form-control" required>
+                <div class="valid-feedback">this is Success</div>
+                </div>
+          
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Gender</label>
+                    <input name="gender" id="gender" type="text" placeholder="Enter gender" class="form-control" required>
+                    <div class="valid-feedback">this is ok</div>
+                    </div>
+
+                    <div class="mb-3 col-md-5">
+                        <label for="age" class="form-label">Age</label>
+                        <input name="age" id="age" type="number" placeholder="Enter age" class="form-control" required>
+                        </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input name="email" id="email" type="text" placeholder="@gmail.com" class="form-control" required>
+                        
+                        </div>
+
+                        <div class="mb-3 col-md-4">
+                            <label for="phone" class="form-label">Mobile number</label>
+                            <input name="phone" id="phone" type="number" placeholder="Mobile number" class="form-control" required>
+                        
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="image" class="form-label">Upload your Image</label>
+                            <input name="image" type="file" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username creat</label>
+                                <input name="username" id="username" type="text" placeholder="example-Ankit@8538" class="form-control" required>
+                                <div class="valid-feedback">this is ok</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Create password</label>
+                                    <input name="password" id="password" type="password" placeholder="password" class="form-control" required>
+                                    </div>
+
+                          <button class="btn btn-success">signUp data</button>
+                          <br>
+                          <br>
+        </form>
+    </div>
+  </div>
